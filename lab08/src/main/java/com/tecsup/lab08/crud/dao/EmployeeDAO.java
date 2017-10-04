@@ -4,7 +4,6 @@ package com.tecsup.lab08.crud.dao;
 import java.util.ArrayList;
 
 import com.tecsup.lab08.crud.bean.Employee;
-
 public interface EmployeeDAO {
 
 	/**
@@ -25,7 +24,7 @@ public interface EmployeeDAO {
 	 * @param pLastname
 	 * @param pSalary
 	 */
-	int create(String pFirstname, String pLastname, Double pSalary);
+	int create(String pFirstname, String pLastname, Double pSalary, int pAge);
 
 	/**
 	 * 
@@ -40,6 +39,5 @@ public interface EmployeeDAO {
 	 * @param pLastname
 	 * @param pSalary
 	 */
-	void update(int id, String pFirstname, String pLastname, Double pSalary);
-
-} 
+	void update(int id, String pFirstname, String pLastname, Double pSalary, int pAge);
+}

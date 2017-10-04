@@ -12,23 +12,24 @@ public class Application {
 		
 		int id = -1;
 		
-		id = dao.create("Linder", "Ha vuelto parte3", (double) 1500);
+		
+		id = dao.create("Linder", "tEVSDFGSDGSDF", (double) 1500, (int) 16);
 		
 		Employee emp = dao.findById(id);
 		
 		System.out.println("Create .. " + emp);
 
-		/*dao.update(id, "Juan2", "Alberto2", (double) 1505);
+		dao.update(id, "Linder", "Hassinger", (double) 1505, 17);
 		
 		emp = dao.findById(id);
 		
 		System.out.println("Update .. " + emp);
-				
-		dao.delete(id);
+		
+		/*dao.delete(id);
 
 		emp = dao.findById(id);
 
-		System.out.println("Delete .. " + emp);		*/
+		System.out.println("Delete .. " + emp);	*/	
 		
 		
 		for (Employee item : dao.findAll()) {

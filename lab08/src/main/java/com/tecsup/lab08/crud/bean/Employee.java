@@ -11,13 +11,17 @@ public class Employee implements Serializable {
 	private String firstname;
 	private String lastname;
 	private double salary;
+	private int age;
 	
-	public Employee(int id, String firstname, String lastname, double salary) {
+	
+
+	public Employee(int id, String firstname, String lastname, double salary, int age) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.salary = salary;
+		this.age = age;
 	}
 
 	public Employee() {
@@ -55,11 +59,23 @@ public class Employee implements Serializable {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
+	
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
 
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", salary=" + salary
-				+ "]";
+				+ ", age=" + age + "]";
 	}
+
+	
+
 
 }
